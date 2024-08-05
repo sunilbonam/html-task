@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Form Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            margin-top: 5px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Form Examples</h1>
+    
+    <!-- Basic Form -->
+    <h2>Basic Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- Form with Various Input Types -->
+    <h2>Form with Various Input Types</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="date">
+        
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+        
+        <label for="range">Satisfaction Level:</label>
+        <input type="range" id="range" name="range" min="0" max="10">
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- Form with Radio Buttons and Checkboxes -->
+    <h2>Form with Radio Buttons and Checkboxes</h2>
+    <form>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interest" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="sports">Sports</label>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- Form with Dropdown Menu -->
+    <h2>Form with Dropdown Menu</h2>
+    <form>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- Form with File Upload -->
+    <h2>Form with File Upload</h2>
+    <form enctype="multipart/form-data">
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+        
+        <input type="submit" value="Upload">
+    </form>
+    
+    <!-- Form with Textarea -->
+    <h2>Form with Textarea</h2>
+    <form>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- Form with Fieldset and Legend -->
+    <h2>Form with Fieldset and Legend</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="uname">
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </fieldset>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

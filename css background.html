@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .background-color {
+            background-color: #3498db; /* Blue background color */
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .background-image {
+            background-image: url('https://t4.ftcdn.net/jpg/07/17/42/79/360_F_717427969_Ipt2NeYycCE9xvBCJm4PN5acHSjy9RZT.jpg'); /* Placeholder image URL */
+            background-size: cover; /* Cover the entire element */
+            background-repeat: no-repeat; /* No repeat */
+            background-position: center; /* Center the background image */
+            color: white;
+            padding: 20px;
+            height: 200px; /* Fixed height to show the background image */
+            margin-bottom: 20px;
+        }
+        .background-repeat {
+            background-image: url('https://t4.ftcdn.net/jpg/07/17/42/79/360_F_717427969_Ipt2NeYycCE9xvBCJm4PN5acHSjy9RZT.jpg'); /* Placeholder image URL */
+            background-repeat: repeat; /* Repeat the background image */
+            padding: 20px;
+            height: 200px; /* Fixed height to show the repeated background image */
+            margin-bottom: 20px;
+        }
+        .background-position {
+            background-image: url('https://t4.ftcdn.net/jpg/07/17/42/79/360_F_717427969_Ipt2NeYycCE9xvBCJm4PN5acHSjy9RZT.jpg'); /* Placeholder image URL */
+            background-size: contain; /* Contain the image within the element */
+            background-repeat: no-repeat; /* No repeat */
+            background-position: top right; /* Position the background image at the top right */
+            padding: 20px;
+            height: 200px; /* Fixed height to show the background image */
+            margin-bottom: 20px;
+        }
+        .multiple-backgrounds {
+            background-image: url('https://t4.ftcdn.net/jpg/07/17/42/79/360_F_717427969_Ipt2NeYycCE9xvBCJm4PN5acHSjy9RZT.jpg'), url('https://t4.ftcdn.net/jpg/07/17/42/79/360_F_717427969_Ipt2NeYycCE9xvBCJm4PN5acHSjy9RZT.jpg'); /* Two background images */
+            background-size: cover, contain; /* Cover the first image, contain the second */
+            background-repeat: no-repeat, repeat; /* No repeat for the first image, repeat for the second */
+            background-position: center, bottom right; /* Center the first image, bottom right for the second */
+            padding: 20px;
+            height: 200px; /* Fixed height to show the background images */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Background Example</h1>
+    
+    <div class="background-color">
+        <p>This div has a blue background color.</p>
+    </div>
+    
+    <div class="background-image">
+        <p>This div has a background image.</p>
+    </div>
+    
+    <div class="background-repeat">
+        <p>This div has a repeating background image.</p>
+    </div>
+    
+    <div class="background-position">
+        <p>This div has a background image positioned at the top right.</p>
+    </div>
+    
+    <div class="multiple-backgrounds">
+        <p>This div has multiple background images.</p>
+    </div>
+</body>
+</html>

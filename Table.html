@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Table Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #edef7e;
+        }
+        .bordered-table th, .bordered-table td {
+            border: 1px solid #71e3e3;
+        }
+        .striped-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .responsive-table th, .responsive-table td {
+            border: 1px solid #b3eb88;
+        }
+        .bordered-table {
+            background-color: #f9ebea;
+        }
+        .striped-table {
+            background-color: #e8f5e9;
+        }
+        .responsive-table {
+            background-color: #e3f2fd;
+        }
+        .grouped-header-table {
+            background-color: #fff3e0;
+        }
+        .merged-cells-table {
+            background-color: #e1bee7;
+        }
+        @media screen and (max-width: 600px) {
+            .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr {
+                display: block;
+            }
+            .responsive-table th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            .responsive-table tr {
+                margin-bottom: 1em;
+            }
+            .responsive-table td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                text-align: left;
+            }
+            .responsive-table td:before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-label);
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Table Examples</h1>
+    
+    <!-- Basic Table -->
+    <h2>Basic Table</h2>
+    <table>
+        <tr>
+            <th>Fruit</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>Red</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>Yellow</td>
+        </tr>
+    </table>
+    
+    <!-- Bordered Table -->
+    <h2>Bordered Table</h2>
+    <table class="bordered-table">
+        <tr>
+            <th>Vegetable</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Carrot</td>
+            <td>Orange</td>
+        </tr>
+        <tr>
+            <td>Spinach</td>
+            <td>Green</td>
+        </tr>
+    </table>
+    
+    <!-- Striped Table -->
+    <h2>Striped Table</h2>
+    <table class="striped-table">
+        <tr>
+            <th>Fruit</th>
+            <th>Season</th>
+        </tr>
+        <tr>
+            <td>Strawberry</td>
+            <td>Spring</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+            <td>Summer</td>
+        </tr>
+    </table>
+    
+    <!-- Responsive Table -->
+    <h2>Responsive Table</h2>
+    <table class="responsive-table">
+        <thead>
+            <tr>
+                <th>Vegetable</th>
+                <th>Season</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Vegetable">Pumpkin</td>
+                <td data-label="Season">Fall</td>
+            </tr>
+            <tr>
+                <td data-label="Vegetable">Cabbage</td>
+                <td data-label="Season">Winter</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Grouped Header Table -->
+    <h2>Grouped Header Table</h2>
+    <table class="grouped-header-table">
+        <thead>
+            <tr>
+                <th>Fruit</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Blueberry</td>
+                <td>Blue</td>
+            </tr>
+            <tr>
+                <td>Grapes</td>
+                <td>Purple</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Footer Information</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <!-- Merged Cells Table -->
+    <h2>Merged Cells Table</h2>
+    <table class="merged-cells-table">
+        <tr>
+            <th rowspan="2">Fruit</th>
+            <th colspan="2">Nutritional Value</th>
+        </tr>
+        <tr>
+            <th>Vitamin C</th>
+            <th>Fiber</th>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>70 mg</td>
+            <td>3 g</td>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>14 mg</td>
+            <td>2 g</td>
+        </tr>
+    </table>
+
+</body>
+</html>
